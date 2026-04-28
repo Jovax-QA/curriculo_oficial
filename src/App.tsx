@@ -75,7 +75,7 @@ export default function App() {
         </div>
 
         {/* Content */}
-        <div className="lg:ml-0">
+        <div className="lg:ml-0 pb-20 lg:pb-0">
           {renderSection()}
         </div>
       </main>
