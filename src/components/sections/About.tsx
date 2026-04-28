@@ -21,7 +21,13 @@ export default function About() {
           sempre buscando aprender e crescer profissionalmente.
         </p>
         <p className="bg-[#111111] border border-[#1f1f1f] rounded-xl p-4 mt-4">
-          <span className="text-[#a3e635] font-bold">Especialista em Automação com IA:</span>{" "}
+          <span className="text-[#a3e635] font-bold">Especialista em Automação de Testes:</span>{" "}
+          Ao longo da minha carreira, venho desenvolvendo automações tanto de API quanto E2E para
+          aumentar a cobertura de testes do produto, garantindo qualidade e confiabilidade em
+          todas as fases do desenvolvimento.
+        </p>
+        <p className="bg-[#111111] border border-[#1f1f1f] rounded-xl p-4 mt-4">
+          <span className="text-[#a3e635] font-bold">Automações Inteligentes com IA:</span>{" "}
           Utilizando{" "}
           <span className="text-white font-semibold">Playwright</span>{" "}
           e{" "}
@@ -33,7 +39,7 @@ export default function About() {
       <div className="fade-in-up fade-in-up-delay-2 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-8 sm:mt-10">
         {[
           { value: "6+", label: "Anos de experiência" },
-          { value: "4", label: "Empresas lideradas" },
+          { value: "3", label: "Empresas lideradas" },
           { value: "100%", label: "Foco em qualidade" },
         ].map((stat) => (
           <div key={stat.label} className="bg-[#111111] border border-[#1f1f1f] rounded-xl p-4 sm:p-5 text-center">
@@ -67,6 +73,13 @@ export default function About() {
           className="px-6 py-3 border border-[#1f1f1f] text-white font-medium rounded-lg text-sm hover:border-[#a3e635] hover:text-[#a3e635] transition-colors text-center"
         >
           GitHub Testing
+        </a>
+        <a
+          href="/Jovani-Miguel-Custodio-CV.pdf"
+          download
+          className="px-6 py-3 border border-[#1f1f1f] text-white font-medium rounded-lg text-sm hover:border-[#a3e635] hover:text-[#a3e635] transition-colors text-center"
+        >
+          Baixar CV em PDF
         </a>
       </div>
     </div>
