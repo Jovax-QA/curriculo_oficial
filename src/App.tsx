@@ -5,8 +5,9 @@ import Experience from "./components/sections/Experience";
 import Education from "./components/sections/Education";
 import Skills from "./components/sections/Skills";
 import Contact from "./components/sections/Contact";
+import Projects from "./components/sections/Projects";
 
-export type Section = "sobre" | "experiencia" | "educacao" | "habilidades" | "contato";
+export type Section = "sobre" | "experiencia" | "educacao" | "habilidades" | "projetos" | "contato";
 
 export default function App() {
   const [active, setActive] = useState<Section>("sobre");
@@ -18,6 +19,7 @@ export default function App() {
       case "experiencia": return <Experience />;
       case "educacao": return <Education />;
       case "habilidades": return <Skills />;
+      case "projetos": return <Projects />;
       case "contato": return <Contact />;
     }
   };

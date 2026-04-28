@@ -11,6 +11,7 @@ const navItems: { id: Section; label: string; icon: string }[] = [
   { id: "experiencia", label: "Experiência", icon: "💼" },
   { id: "educacao", label: "Educação", icon: "🎓" },
   { id: "habilidades", label: "Habilidades", icon: "⚡" },
+  { id: "projetos", label: "Projetos", icon: "🚀" },
   { id: "contato", label: "Contato", icon: "📬" },
 ];
 
