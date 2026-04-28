@@ -75,7 +75,7 @@ export default function About() {
           GitHub Testing
         </a>
         <a
-          href="/Jovani-Miguel-Custodio-CV.pdf"
+          href="./Jovani-Miguel-Custodio-CV.pdf"
           download
           className="px-6 py-3 border border-[#1f1f1f] text-white font-medium rounded-lg text-sm hover:border-[#a3e635] hover:text-[#a3e635] transition-colors text-center"
         >
