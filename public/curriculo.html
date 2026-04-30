@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jovani Miguel Custódio - Currículo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f5f5;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    @media print {
+      body {
+        background: white;
+      }
+      .container {
+        margin: 0;
+        padding: 20px;
+        box-shadow: none;
+      }
+      .print-btn {
+        display: none;
+      }
+    }
+    
+    .header {
+      border-bottom: 3px solid #2c3e50;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .name {
+      font-size: 32px;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+    
+    .title {
+      font-size: 18px;
+      color: #27ae60;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    
+    .contact {
+      font-size: 12px;
+      color: #666;
+    }
+    
+    .contact a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    
+    .section {
+      margin-bottom: 25px;
+    }
+    
+    .section-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #2c3e50;
+      border-bottom: 2px solid #27ae60;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    
+    .highlight-box {
+      background: #f8f9fa;
+      border-left: 4px solid #27ae60;
+      padding: 15px;
+      margin: 15px 0;
+    }
+    
+    .highlight-title {
+      font-weight: bold;
+      color: #27ae60;
+      margin-bottom: 8px;
+    }
+    
+    .experience-item, .education-item {
+      margin-bottom: 20px;
+    }
+    
+    .experience-title {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    
+    .experience-company {
+      color: #666;
+      font-style: italic;
+      margin-bottom: 5px;
+    }
+    
+    .experience-date {
+      color: #999;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+    
+    .experience-description {
+      font-size: 14px;
+    }
+    
+    .experience-description ul {
+      margin-left: 20px;
+      margin-top: 8px;
+    }
+    
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+    
+    .skill-category {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    
+    .skill-category-title {
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    
+    .skill-list {
+      font-size: 13px;
+    }
+    
+    .skill-list li {
+      margin-bottom: 5px;
+    }
+    
+    .project-item {
+      background: #f8f9fa;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
+    
+    .project-title {
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 8px;
+    }
+    
+    .project-description {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    
+    .tech-tag {
+      background: #27ae60;
+      color: white;
+      padding: 3px 10px;
+      border-radius: 15px;
+      font-size: 11px;
+    }
+    
+    .print-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #27ae60;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    
+    .print-btn:hover {
+      background: #219a52;
+    }
+  </style>
+</head>
+<body>
+  <button class="print-btn" onclick="window.print()">🖨️ Imprimir como PDF</button>
+  
+  <div class="container">
+    <div class="header">
+      <div class="name">Jovani Miguel Custódio</div>
+      <div class="title">Engenheiro de Qualidade de Software (QA Engineer)</div>
+      <div class="contact">
+        📧 jovani.custodio@email.com | 
+        📱 +55 (11) 99999-9999 | 
+        🔗 <a href="https://www.linkedin.com/in/inspector-qa/" target="_blank">linkedin.com/in/inspector-qa</a> | 
+        🔗 <a href="https://github.com/Jovani-QA" target="_blank">github.com/Jovani-QA</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Sobre Mim</div>
+      <p>Meu foco é garantir a entrega de produtos de alta qualidade aos clientes. Tenho experiência em identificar e avaliar lacunas nos processos de desenvolvimento e implementar melhores práticas.</p>
+      <p>Comprometido com a satisfação do cliente e trabalhando em equipe para alcançar o sucesso em projetos desafiadores. Forte liderança e ética de trabalho, sempre buscando aprender e crescer profissionalmente.</p>
+      
+      <div class="highlight-box">
+        <div class="highlight-title">Especialista em Automação de Testes</div>
+        Ao longo da minha carreira, venho desenvolvendo automações tanto de API quanto E2E para aumentar a cobertura de testes do produto, garantindo qualidade e confiabilidade em todas as fases do desenvolvimento.
+      </div>
+      
+      <div class="highlight-box">
+        <div class="highlight-title">Automações Inteligentes com IA</div>
+        Utilizando Playwright e MCP para criar soluções inteligentes de teste que revolucionam a qualidade de software.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Experiência Profissional</div>
+      
+      <div class="experience-item">
+        <div class="experience-title">Engenheiro de Qualidade de Software</div>
+        <div class="experience-company">Empresa 1</div>
+        <div class="experience-date">2020 - Presente</div>
+        <div class="experience-description">
+          <ul>
+            <li>Liderança de equipe de QA e implementação de estratégias de automação</li>
+            <li>Desenvolvimento de testes E2E com Playwright e Cypress</li>
+            <li>Integração de testes em pipelines CI/CD</li>
+            <li>Mentoria de desenvolvedores em boas práticas de teste</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="experience-item">
+        <div class="experience-title">QA Automation Engineer</div>
+        <div class="experience-company">Empresa 2</div>
+        <div class="experience-date">2018 - 2020</div>
+        <div class="experience-description">
+          <ul>
+            <li>Automação de testes de API com Postman e REST Assured</li>
+            <li>Criação de frameworks de automação em Python e Java</li>
+            <li>Implementação de testes de performance com JMeter</li>
+            <li>Colaboração com equipes ágeis (Scrum)</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="experience-item">
+        <div class="experience-title">QA Tester</div>
+        <div class="experience-company">Empresa 3</div>
+        <div class="experience-date">2016 - 2018</div>
+        <div class="experience-description">
+          <ul>
+            <li>Execução de testes manuais e funcionais</li>
+            <li>Documentação de casos de teste e defeitos</li>
+            <li>Participação em reuniões de planejamento de testes</li>
+            <li>Validação de requisitos funcionais</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Habilidades Técnicas</div>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-category-title">Automação de Testes</div>
+          <ul class="skill-list">
+            <li>Playwright</li>
+            <li>Cypress</li>
+            <li>Selenium WebDriver</li>
+            <li>Postman</li>
+            <li>REST Assured</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <div class="skill-category-title">Linguagens</div>
+          <ul class="skill-list">
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <div class="skill-category-title">Ferramentas</div>
+          <ul class="skill-list">
+            <li>Git/GitHub</li>
+            <li>Jenkins</li>
+            <li>Docker</li>
+            <li>Jira</li>
+            <li>YouTrack</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category">
+          <div class="skill-category-title">Automação com IA</div>
+          <ul class="skill-list">
+            <li>MCP (Model Context Protocol)</li>
+            <li>Playwright MCP</li>
+            <li>Chrome MCP</li>
+            <li>AI Agents</li>
+            <li>TDD/BDD</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Projetos de Automação com IA</div>
+      
+      <div class="project-item">
+        <div class="project-title">📋 Integração Jira/YouTrack com MCP</div>
+        <div class="project-description">Sistema de automação que lê cards de gerenciadores de tarefas (Jira/YouTrack) via MCP e gera automaticamente cenários de testes baseados nos requisitos descritos.</div>
+        <div class="tech-tags">
+          <span class="tech-tag">MCP</span>
+          <span class="tech-tag">Jira API</span>
+          <span class="tech-tag">YouTrack API</span>
+          <span class="tech-tag">TypeScript</span>
+        </div>
+      </div>
+      
+      <div class="project-item">
+        <div class="project-title">🌐 Chrome MCP - Análise de Páginas</div>
+        <div class="project-description">Ferramenta de análise automatizada de páginas web usando Chrome MCP para identificar elementos, padrões de navegação e oportunidades de automação de testes.</div>
+        <div class="tech-tags">
+          <span class="tech-tag">Chrome MCP</span>
+          <span class="tech-tag">Puppeteer</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Web Scraping</span>
+        </div>
+      </div>
+      
+      <div class="project-item">
+        <div class="project-title">🤖 Playwright MCP - Automação Inteligente</div>
+        <div class="project-description">Solução completa de automação que levanta cenários de testes, planeja, executa e automatiza utilizando boas práticas como TDD, BDD, Arquitectura de Testes e Agents.</div>
+        <div class="tech-tags">
+          <span class="tech-tag">Playwright</span>
+          <span class="tech-tag">MCP</span>
+          <span class="tech-tag">TDD</span>
+          <span class="tech-tag">BDD</span>
+          <span class="tech-tag">Agents</span>
+          <span class="tech-tag">TypeScript</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Formação Acadêmica</div>
+      
+      <div class="education-item">
+        <div class="experience-title">Bacharelado em Ciência da Computação</div>
+        <div class="experience-company">Universidade</div>
+        <div class="experience-date">2012 - 2016</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Certificações</div>
+      <ul>
+        <li>ISTQB Certified Tester - Foundation Level</li>
+        <li>Playwright Automation Certification</li>
+        <li>Scrum Master Certified</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
