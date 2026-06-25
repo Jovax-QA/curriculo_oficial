@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículo Jovani Miguel</title>
+    <style>
+      :root {
+        --bg: #0a0a0a;
+        --panel: #111111;
+        --panel-2: #141414;
+        --border: #1f1f1f;
+        --accent: #a3e635;
+        --text: #f5f5f5;
+        --muted: #9ca3af;
+        --subtle: #6b7280;
+      }
+
+      @page {
+        size: A4;
+        margin: 10mm;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        font-size: 11px;
+        line-height: 1.45;
+      }
+
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0 auto;
+        background: var(--bg);
+        padding: 12mm 14mm;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #111111 0%, #171717 100%);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 16px 18px;
+        margin-bottom: 10px;
+      }
+
+      .top-note {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 8px;
+        padding: 8px 10px;
+        border: 1px solid rgba(163, 230, 53, 0.2);
+        background: rgba(163, 230, 53, 0.08);
+        border-radius: 10px;
+        color: var(--accent);
+        font-size: 9px;
+        font-weight: 700;
+      }
+
+      .name {
+        font-size: 24px;
+        font-weight: 800;
+        margin: 0 0 4px;
+      }
+
+      .role {
+        color: var(--accent);
+        font-weight: 700;
+        margin: 0 0 8px;
+        font-size: 12px;
+      }
+
+      .summary {
+        color: var(--muted);
+        margin: 0;
+      }
+
+      .section {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 12px 14px;
+        margin-bottom: 10px;
+        page-break-inside: avoid;
+      }
+
+      .section-title {
+        color: var(--accent);
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        margin: 0 0 8px;
+      }
+
+      .section h2 {
+        font-size: 16px;
+        margin: 0 0 8px;
+        color: white;
+      }
+
+      .card {
+        background: var(--panel-2);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 10px 11px;
+        margin-bottom: 7px;
+      }
+
+      .card:last-child { margin-bottom: 0; }
+
+      .row-between {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        align-items: flex-start;
+      }
+
+      .card h3 {
+        margin: 0 0 2px;
+        font-size: 12px;
+        color: white;
+      }
+
+      .company {
+        color: var(--accent);
+        font-weight: 700;
+        margin: 0 0 2px;
+        font-size: 10px;
+      }
+
+      .period {
+        color: var(--subtle);
+        font-size: 9px;
+        background: #1a1a1a;
+        padding: 2px 6px;
+        border-radius: 999px;
+        white-space: nowrap;
+      }
+
+      .bullets {
+        margin: 6px 0 0;
+        padding-left: 14px;
+        color: var(--muted);
+      }
+
+      .bullets li { margin-bottom: 2px; }
+
+      .education-item {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
+      .degree { color: white; font-weight: 700; margin: 0 0 2px; }
+      .institution { color: var(--muted); margin: 0; }
+
+      .skill-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+
+      .skill-group {
+        background: var(--panel-2);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 8px 10px;
+      }
+
+      .skill-group h4 {
+        margin: 0 0 6px;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: white;
+      }
+
+      .skill-item {
+        display: flex;
+        justify-content: space-between;
+        font-size: 9px;
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+
+      .chip-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .chip {
+        background: rgba(163, 230, 53, 0.12);
+        color: var(--accent);
+        border: 1px solid rgba(163, 230, 53, 0.2);
+        border-radius: 999px;
+        padding: 3px 7px;
+        font-size: 9px;
+      }
+
+      .contact-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+      }
+
+      .contact-item {
+        background: var(--panel-2);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 8px 9px;
+      }
+
+      .contact-label {
+        font-size: 8px;
+        color: var(--subtle);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 2px;
+      }
+
+      .contact-value {
+        color: white;
+        font-size: 9px;
+        word-break: break-word;
+      }
+
+      a { color: inherit; text-decoration: none; }
+      .small { color: var(--muted); font-size: 9px; }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="top-note">
+        <span>Currículo resumido</span>
+        <span>Para currículo completo acesse: https://jovax-qa.github.io/curriculo_oficial/</span>
+      </div>
+      <div class="header">
+        <h1 class="name">Jovani Miguel Custódio</h1>
+        <p class="role">Quality Engineering Lead | Tech Lead | AI Automation & Software Engineering</p>
+        <p class="summary">Profissional de tecnologia com graduação em Análise e Desenvolvimento de Sistemas e pós-graduação em Engenharia de Software, atuando em liderança técnica, engenharia de qualidade, automação de processos e soluções com Inteligência Artificial.</p>
+      </div>
+
+      <div class="section">
+        <p class="section-title">Sobre</p>
+        <h2>Visão profissional</h2>
+        <p class="summary" style="margin-bottom:8px;">Minha atuação está focada em construir soluções que aceleram a entrega de software, aumentam a produtividade dos times e reduzem atividades operacionais por meio da automação inteligente.</p>
+        <p class="summary">Atuo com liderança técnica, facilitação ágil, gestão de prazos e impedimentos, além de criar agentes de IA, automações para análise de requisitos, geração de documentação, apoio à tomada de decisão, automação de testes e otimização do ciclo de desenvolvimento.</p>
+      </div>
+
+      <div class="section">
+        <p class="section-title">Experiência</p>
+        <div class="card">
+          <div class="row-between">
+            <div>
+              <h3>Quality Engineering Lead | Tech Lead</h3>
+              <p class="company">QA Enable</p>
+            </div>
+            <span class="period">2025 — Atualmente</span>
+          </div>
+          <ul class="bullets">
+            <li>Liderança técnica de squads e entregas com foco em qualidade, previsibilidade e velocidade.</li>
+            <li>Gestão de prazos, estimativas, riscos e facilitação de impedimentos.</li>
+            <li>Atuação como ponte entre negócio, desenvolvimento e qualidade para acelerar a entrega.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="row-between">
+            <div>
+              <h3>Tech Lead QA & Delivery Lead</h3>
+              <p class="company">Attus</p>
+            </div>
+            <span class="period">2023 — 2025</span>
+          </div>
+          <ul class="bullets">
+            <li>Liderança técnica da equipe de qualidade e coordenação de entregas.</li>
+            <li>Alinhamento entre produto, desenvolvimento e stakeholders para execução ágil.</li>
+            <li>Estratégia de qualidade, automação e melhoria contínua de processos.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="row-between">
+            <div>
+              <h3>Líder Técnico de Qualidade</h3>
+              <p class="company">Casting</p>
+            </div>
+            <span class="period">2022 — 2023</span>
+          </div>
+          <ul class="bullets">
+            <li>Implantação do setor de QA e estruturação de processos.</li>
+            <li>Execução de testes manuais e automatizados com foco em entregas confiáveis.</li>
+            <li>Gerenciamento de atividades com o PO e apoio à execução das entregas.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <p class="section-title">Educação</p>
+        <div class="card">
+          <div class="education-item">
+            <div>
+              <p class="degree">Pós-Graduação — Engenharia de Software</p>
+              <p class="institution">Vincit</p>
+            </div>
+            <span class="period">2023 — 2024</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="education-item">
+            <div>
+              <p class="degree">Graduação — Análise e Desenvolvimento de Sistemas</p>
+              <p class="institution">Unicesumar</p>
+            </div>
+            <span class="period">2020 — 2023</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="education-item">
+            <div>
+              <p class="degree">Técnico — Análise e Desenvolvimento de Sistemas</p>
+              <p class="institution">SESI SENAI</p>
+            </div>
+            <span class="period">2020 — 2022</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="education-item">
+            <div>
+              <p class="degree">Projetos & Consultorias</p>
+              <p class="institution">One Touch QA · Alexandre Desenvolvimento · Cassol</p>
+            </div>
+            <span class="period">2022 — 2023</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <p class="section-title">Habilidades</p>
+        <div class="skill-grid">
+          <div class="skill-group">
+            <h4>Automação & QA</h4>
+            <div class="skill-item"><span>Cypress</span><span>92%</span></div>
+            <div class="skill-item"><span>Playwright</span><span>90%</span></div>
+            <div class="skill-item"><span>Java + JUnit/TestNG</span><span>82%</span></div>
+            <div class="skill-item"><span>Robot Framework</span><span>72%</span></div>
+          </div>
+          <div class="skill-group">
+            <h4>Delivery & Liderança</h4>
+            <div class="skill-item"><span>Delivery Lead</span><span>92%</span></div>
+            <div class="skill-item"><span>Gestão de Equipes</span><span>90%</span></div>
+            <div class="skill-item"><span>Planejamento & Estimativas</span><span>88%</span></div>
+            <div class="skill-item"><span>Facilitação Ágil</span><span>90%</span></div>
+          </div>
+          <div class="skill-group">
+            <h4>IA & Automação</h4>
+            <div class="skill-item"><span>Agentes de IA</span><span>86%</span></div>
+            <div class="skill-item"><span>Prompt Engineering</span><span>84%</span></div>
+            <div class="skill-item"><span>MCP</span><span>80%</span></div>
+            <div class="skill-item"><span>ADR / SDD</span><span>76%</span></div>
+          </div>
+          <div class="skill-group">
+            <h4>Ferramentas</h4>
+            <div class="skill-item"><span>Git / GitHub / GitLab</span><span>90%</span></div>
+            <div class="skill-item"><span>Jira / Azure DevOps</span><span>92%</span></div>
+            <div class="skill-item"><span>Jenkins (CI/CD)</span><span>78%</span></div>
+            <div class="skill-item"><span>Scrum / Kanban</span><span>94%</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <p class="section-title">Projetos</p>
+        <div class="card">
+          <h3>Integração Jira/YouTrack com MCP</h3>
+          <p class="small">Sistema de automação que lê cards de gerenciadores de tarefas via MCP e gera cenários de testes automaticamente com base nos requisitos.</p>
+          <div class="chip-row" style="margin-top:6px;">
+            <span class="chip">MCP</span><span class="chip">Jira API</span><span class="chip">YouTrack API</span><span class="chip">TypeScript</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Chrome MCP - Análise de Páginas</h3>
+          <p class="small">Ferramenta de análise automatizada de páginas web para identificar elementos, padrões de navegação e oportunidades de automação.</p>
+          <div class="chip-row" style="margin-top:6px;">
+            <span class="chip">Chrome MCP</span><span class="chip">Puppeteer</span><span class="chip">TypeScript</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Playwright MCP - Automação Inteligente</h3>
+          <p class="small">Solução completa de automação que levanta cenários, planeja, executa e automatiza com boas práticas como TDD, BDD e Agents.</p>
+          <div class="chip-row" style="margin-top:6px;">
+            <span class="chip">Playwright</span><span class="chip">MCP</span><span class="chip">TDD</span><span class="chip">BDD</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Workflows com IA</h3>
+          <p class="small">Abordagem IA-first para acelerar o ciclo completo de desenvolvimento — desde a consulta e automação até análise de incidentes, levantamento de cenários, planejamento de tarefas, revisão de código e criação de agentes autônomos para testes.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <p class="section-title">Contato</p>
+        <div class="contact-list">
+          <div class="contact-item"><div class="contact-label">Telefone</div><div class="contact-value">(48) 998026299</div></div>
+          <div class="contact-item"><div class="contact-label">E-mail</div><div class="contact-value">jovani.criciuma@hotmail.com</div></div>
+          <div class="contact-item"><div class="contact-label">LinkedIn</div><div class="contact-value">linkedin.com/in/inspector-qa</div></div>
+          <div class="contact-item"><div class="contact-label">GitHub (QA)</div><div class="contact-value">github.com/Jovani-QA</div></div>
+          <div class="contact-item"><div class="contact-label">GitHub (Testing)</div><div class="contact-value">github.com/Jovani-Testing</div></div>
+          <div class="contact-item"><div class="contact-label">Localização</div><div class="contact-value">Bairro Ana Maria, Criciúma — SC</div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
