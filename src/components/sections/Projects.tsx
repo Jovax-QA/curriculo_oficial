@@ -20,6 +20,15 @@ export default function Projects() {
     }
   ];
 
+  const workflows = [
+    "Consulta e automação com IA para acelerar análises de requisitos",
+    "Construção de aplicações com IA-first em todo o ciclo de desenvolvimento",
+    "Análise de incidentes e suporte à decisão com agentes inteligentes",
+    "Levantamento de cenários, planejamento de tarefas e execução assistida por IA",
+    "Revisão de código e validação de entregas com apoio de inteligência artificial",
+    "Criação de agentes autônomos para testes, substituindo parte do trabalho manual"
+  ];
+
   return (
     <div className="h-full flex flex-col justify-center px-6 py-8 sm:px-8 sm:py-10 lg:px-12 lg:py-10 max-w-4xl mx-auto w-full">
       <div className="fade-in-up">
@@ -57,6 +66,21 @@ export default function Projects() {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="mt-8 bg-[#111111] border border-[#1f1f1f] rounded-xl p-6 fade-in-up fade-in-up-delay-2">
+        <h3 className="text-xl font-bold text-white mb-4">Workflows com IA</h3>
+        <p className="text-gray-400 text-sm sm:text-base leading-relaxed mb-4">
+          Abordagem IA-first para acelerar o ciclo completo de desenvolvimento, desde a compreensão do problema até a validação da entrega.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {workflows.map((workflow) => (
+            <div key={workflow} className="flex items-start gap-2 rounded-lg border border-[#1f1f1f] bg-[#0d0d0d] p-3">
+              <span className="text-[#a3e635] mt-0.5">›</span>
+              <span className="text-sm text-gray-300">{workflow}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

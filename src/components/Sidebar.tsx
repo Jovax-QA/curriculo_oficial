@@ -38,7 +38,7 @@ export default function Sidebar({ active, setActive, isMobile = false }: Props) 
           Custódio
         </h2>
         <p className={`text-[#a3e635] font-medium mt-2 ${isMobile ? 'text-xs' : 'text-sm'}`}>
-          QA Engineer
+          Quality Engineering Lead
         </p>
         <div className="mt-3 flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-[#a3e635] animate-pulse"></span>

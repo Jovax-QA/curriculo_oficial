@@ -3,44 +3,43 @@ export default function About() {
     <div className="h-full flex flex-col justify-center px-6 py-8 sm:px-8 sm:py-10 lg:px-12 lg:py-10 max-w-3xl mx-auto w-full">
       <div className="fade-in-up">
         <span className="text-[#a3e635] text-xs sm:text-sm font-bold uppercase tracking-widest">Sobre mim</span>
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mt-3 mb-6 leading-tight">
-          Engenheiro de<br />
-          <span className="text-[#a3e635]">Qualidade de Software</span>
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mt-3 mb-6 leading-tight max-w-3xl">
+          <span className="block">Quality Engineering Lead</span>
+          <span className="mt-2 block text-lg sm:text-xl lg:text-2xl font-semibold text-[#a3e635] leading-snug">
+            Tech Lead | AI Automation & Software Engineering
+          </span>
         </h2>
       </div>
 
       <div className="fade-in-up fade-in-up-delay-1 space-y-4 text-gray-300 text-sm sm:text-base leading-relaxed">
         <p>
-          Meu foco é garantir a entrega de produtos de alta qualidade aos clientes.
-          Tenho experiência em identificar e avaliar lacunas nos processos de desenvolvimento
-          e implementar melhores práticas.
+          Profissional de tecnologia com graduação em Análise e Desenvolvimento de Sistemas e pós-graduação em Engenharia de Software, atuando na liderança técnica de equipes, engenharia de qualidade, automação de processos e implementação de soluções baseadas em Inteligência Artificial.
         </p>
         <p>
-          Comprometido com a satisfação do cliente e trabalhando em equipe para alcançar
-          o sucesso em projetos desafiadores. Forte liderança e ética de trabalho,
-          sempre buscando aprender e crescer profissionalmente.
+          Minha atuação está focada em construir soluções que aceleram a entrega de software, aumentam a produtividade dos times e reduzem atividades operacionais por meio da automação inteligente. Desenvolvo agentes de IA, automações para análise de requisitos, geração de documentação, apoio à tomada de decisão, automação de testes e otimização do ciclo de desenvolvimento.
+        </p>
+        <p>
+          Além da atuação técnica, exerço um papel estratégico voltado para eficiência e aceleração do fluxo de entrega entre Qualidade, Desenvolvimento e Produto, com foco em gestão de prazos, estimativas, facilitação de impedimentos, comunicação assertiva e alinhamento entre negócio e engenharia.
         </p>
         <p className="bg-[#111111] border border-[#1f1f1f] rounded-xl p-4 mt-4">
-          <span className="text-[#a3e635] font-bold">Especialista em Automação de Testes:</span>{" "}
-          Ao longo da minha carreira, venho desenvolvendo automações tanto de API quanto E2E para
-          aumentar a cobertura de testes do produto, garantindo qualidade e confiabilidade em
-          todas as fases do desenvolvimento.
+          <span className="text-[#a3e635] font-bold">Especialização:</span>{" "}
+          Delivery Lead, liderança técnica de QA, gestão de equipes, facilitação ágil, qualidade em todo o ciclo de desenvolvimento e AI-Powered QA.
         </p>
         <p className="bg-[#111111] border border-[#1f1f1f] rounded-xl p-4 mt-4">
-          <span className="text-[#a3e635] font-bold">Automações Inteligentes com IA:</span>{" "}
+          <span className="text-[#a3e635] font-bold">Automação Inteligente com IA:</span>{" "}
           Utilizando{" "}
           <span className="text-white font-semibold">Playwright</span>{" "}
           e{" "}
           <span className="text-white font-semibold">MCP</span>{" "}
-          para criar soluções inteligentes de teste que revolucionam a qualidade de software.
+          para criar soluções que aumentam a produtividade, reduzem retrabalho e fortalecem a qualidade de software.
         </p>
       </div>
 
       <div className="fade-in-up fade-in-up-delay-2 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-8 sm:mt-10">
         {[
           { value: "6+", label: "Anos de experiência" },
-          { value: "3", label: "Empresas lideradas" },
-          { value: "100%", label: "Foco em qualidade" },
+          { value: "10+", label: "Equipes e entregas conduzidas" },
+          { value: "100%", label: "Foco em eficiência e qualidade" },
         ].map((stat) => (
           <div key={stat.label} className="bg-[#111111] border border-[#1f1f1f] rounded-xl p-4 sm:p-5 text-center">
             <div className="text-2xl sm:text-3xl font-black text-[#a3e635]">{stat.value}</div>
@@ -75,11 +74,12 @@ export default function About() {
           GitHub Testing
         </a>
         <a
-          href="./Jovani-Miguel-Custodio-CV.pdf"
-          download
+          href="./cv-pdf.html"
+          target="_blank"
+          rel="noopener noreferrer"
           className="px-6 py-3 border border-[#1f1f1f] text-white font-medium rounded-lg text-sm hover:border-[#a3e635] hover:text-[#a3e635] transition-colors text-center"
         >
-          Baixar CV em PDF
+          Ver CV em PDF
         </a>
       </div>
     </div>

@@ -1,22 +1,25 @@
 const experiences = [
   {
     company: "QA Enable",
-    role: "Engenheiro de Qualidade",
+    role: "Quality Engineering Lead | Tech Lead",
     period: "2025 — Atualmente",
     current: true,
     tasks: [
-      "Criar testes automatizados para os times darem seguimento",
-      "Testes E2E, Testes de API e Load Tests",
+      "Liderança técnica de squads e entregas com foco em qualidade, previsibilidade e velocidade",
+      "Gestão de prazos, estimativas, riscos e facilitação de impedimentos",
+      "Atuação como ponte entre negócio, desenvolvimento e qualidade para acelerar a entrega",
+      "Criação de automações e soluções com IA para otimizar testes e processos",
     ],
   },
   {
     company: "Attus",
-    role: "Líder Técnico de Qualidade",
+    role: "Tech Lead QA & Delivery Lead",
     period: "2023 — 2025",
     current: false,
     tasks: [
-      "Liderança técnica da equipe de qualidade",
-      "Qualidade de produto e processos",
+      "Liderança técnica da equipe de qualidade e coordenação de entregas",
+      "Alinhamento entre produto, desenvolvimento e stakeholders para execução ágil",
+      "Estratégia de qualidade, automação e melhoria contínua de processos",
     ],
   },
   {
@@ -25,10 +28,10 @@ const experiences = [
     period: "2022 — 2023",
     current: false,
     tasks: [
-      "Implantação do setor de QA",
-      "Realização de testes manuais e automatizados",
+      "Implantação do setor de QA e estruturação de processos",
+      "Realização de testes manuais e automatizados com foco em entregas confiáveis",
       "Documentação de bugs, cenários de teste e produto",
-      "Gerenciamento de atividades com o PO",
+      "Gerenciamento de atividades com o PO e apoio à execução das entregas",
     ],
   },
   {
@@ -37,9 +40,9 @@ const experiences = [
     period: "2021 — 2022",
     current: false,
     tasks: [
-      "Analista de testes no BTG Pactual (segmento financeiro)",
-      "Homologação de demandas e report de bugs",
-      "Levantamento de cenários de testes",
+      "Analista de testes no BTG Pactual, com forte atuação em homologação e garantia de qualidade",
+      "Homologação de demandas, report de bugs e apoio à estabilidade dos produtos",
+      "Levantamento de cenários de testes e validação de entregas",
     ],
   },
   {
@@ -48,9 +51,9 @@ const experiences = [
     period: "2020 — 2021",
     current: false,
     tasks: [
-      "Testes funcionais, regressão e exploratórios",
-      "Testes de Integração / API e desempenho",
-      "Testes automatizados",
+      "Testes funcionais, regressão, exploratórios e de integração",
+      "Execução de testes de API e desempenho",
+      "Automação de testes para aumentar cobertura e confiabilidade",
     ],
   },
 ];
